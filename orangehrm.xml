@@ -1,0 +1,32 @@
+<suite name="OrangeHRM Test Suite">
+
+ 	
+	<test name="Admin Login TestCase with valid Data">
+	<parameter name="adminuid" value="Admin"></parameter>
+	<parameter name="adminpwd" value="Qedge123!@#"></parameter>
+		<classes>
+			<class name="orangehrm.testcases.AdminLoginTestwithValidInputs"></class>			
+		</classes>		
+	</test>
+	
+	
+	
+	<test name="Admin Login TestCase with invalid Data">
+	<parameter name="uid" value="abc"></parameter>
+	<parameter name="pwd" value="xyz"></parameter>
+		<classes>
+		//orangehrm.testcases means package name
+		//AdminLoginTestwithInvalidInputs means class name
+			<class name="orangehrm.testcases.AdminLoginTestwithInvalidInputs"></class>
+		</classes>		
+	</test>
+	
+	
+	<test name="New Employee Registration Test">
+	<parameter name="fname" value="Sreekar1"></parameter>
+	<parameter name="lname" value="V"></parameter>
+		<classes>
+			<class name="orangehrm.testcases.EmployeeRegTest"></class> 
+		</classes>
+	</test>
+	</suite>
